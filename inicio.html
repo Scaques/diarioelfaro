@@ -4,13 +4,65 @@
 <head>
     <title>Noticias</title>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
 </head>
+
+<style>
+    body {
+        background-color: #f5f5f5;
+        font-family: "Trirong", serif;
+    }
+    footer{
+        text-align: center;
+        background-color: #c9d2d0;
+        color: #31231e ;
+    }
+    nav{
+        text-align: center;
+    }
+    img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    a:hover {
+        text-decoration: none;
+        font-weight: bold;
+    }
+    a:active {
+        text-decoration: none;
+        font-weight: bold;
+    }
+    .grid {
+        display:grid;
+        grid-template-columns: auto auto auto;
+        grid-gap: 20px;
+    }
+    .grid div{
+        background: #ffffff;
+    }
+    .grid div:hover{
+        background: #000000;
+        color: #ffffff;
+    }
+    h1{
+        text-align: center;
+    }
+</style>
 
 
 <body>
     <header>
-        <h1>Noticias</h1>
+        <img src="header_faro.png" alt="El Faro" style="width:30% ;" >
     </header>
+    
+    <nav>
+        <a href="./inicio.html">Inicio</a>
+        <a href="./deporte.html">Deporte</a>
+        <a href="./negocios.html">Negocios</a>
+    </nav>
+    
+    <h1>Noticias</h1>
     
     <h2>Servel informa suspensión del plebiscito del 4-S en Haití por "seguridad de comunidad chilena residente"</h2>
     <h3>Pais</h3>
@@ -40,5 +92,8 @@
        </audio>
     
 </body>
+<footer>
+    <p>Copyright Sebastian Caques 2022</p>
+</footer>
 
 </html>
