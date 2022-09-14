@@ -45,3 +45,23 @@ a:active {
     background: #000000;
     color: #ffffff;
 }
+#rej{
+    padding-top: 1%;
+    font-family: "Trirong", serif;
+    text-align: center;
+}
+
+form{
+    
+    display: flex;
+    flex-direction: column;
+    padding: 2vw 4vw ;
+    font-family: "Trirong", serif;
+    width: 90%;
+    
+}
+
+form h2{
+    text-align: center;
+    font-family: "Trirong", serif;
+}

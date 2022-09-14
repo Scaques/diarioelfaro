@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Contacto</title>
+    <meta charset="UTF-8">
+    <script src="fechahora.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+    <link href="./style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body onload="reloj()">
+   
+    <header>
+        <a href="./index.html">
+            <img src="header_faro.png" alt="El Faro" style="width:30% ;" >
+          </a>
+    </header>
+        <div id="rej"></div>
+    <nav>
+        <a href="./inicio.html">Inicio</a>
+        <a href="./deporte.html">Deporte</a>
+        <a href="./negocios.html">Negocios</a>
+    </nav>
+    <div class="container">
+        <form onsubmit="sendEmail(); reset(); return false;">
+            <h2>Contactese con Nosotros</h2>
+            <input type="text" id="name" placeholder="Nombre" required>
+            <textarea id="message" rows="4" placeholder="Mensaje"></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendEmail(){
+            Email.send({
+                Host : "smtp.gmail.com",
+                Username : "dimensionhole@gmail.com",
+                Password : "d1mensionhole",
+                To : 'scaques@gmail.com',
+                From : document.getElementById("name").value,
+                Subject : "Contacto",
+                Body : document.getElementById("message").value
+            }).then(
+                message => alert("Mensaje Enviado")
+            )
+        }
+
+    </script>
+   
+</body>
+
+<footer>
+    <p>Copyright Sebastian Caques 2022</p>
+</footer>
+
+</html>
