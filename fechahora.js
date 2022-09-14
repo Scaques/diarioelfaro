@@ -20,7 +20,7 @@ var t = setTimeout(reloj, 500);
 
 function article(){
     const grid =  document.getElementById("grid")
-    console.log(grid)
+    
     const div = document.createElement('div')
     
     div.textContent = document.getElementById("noticia").value
