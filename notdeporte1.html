@@ -1,38 +1,108 @@
 <!DOCTYPE html>
-<html lang="es">
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Deporte</title>
+		<link href="./style.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.0/css/bulma.min.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+        <script src="fechahora.js"></script>
+        <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+        
+		
+        <style>
+        .center {
+	        display: flex;
+	        justify-content: center;
+	        align-items: center;
+        }
+        </style>
+	</head>
+	
+    <body onload="reloj()">
 
-<head>
-    <title>Deportes</title>
-    <meta charset="UTF-8">
-    <script src="fechahora.js"></script>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
-    <link href="./style.css" rel="stylesheet" type="text/css">
-</head>
+        <!-- .section -->
+            <section class="section is-paddingless-horizontal">
+                <div class="container grid">
+                    <nav class="breadcrumb grid-xl" aria-label="breadcrumbs">
+                        <ul>
+                            <li><a href="#" aria-current="page">Se Arrienda Gato</a></li>
+                            <li><a href="#" aria-current="page">Se Hacen Sitios Web Baratos</a></li>
+                            <li><a href="#" aria-current="page">Se Compran Relojes</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </section>
+        <!-- /.section -->
 
-<body onload="reloj()">
-   
-    <header>
-        <a href="./index.html">
-            <img src="header_faro.png" alt="El Faro" style="width:30% ;" >
-          </a>
-    </header>
-        <div id="rej"></div>
-    <nav>
-        <a href="./inicio.html">Inicio</a>
-        <a href="./deporte.html">Deporte</a>
-        <a href="./negocios.html">Negocios</a>
-    </nav>
-    
-    <h2>Conmebol solicitará a la FIFA mantener formato "todos contra todos" en Mundial de Norteamérica 2026</h2>
-    <h3>Futbol</h3>
-    <p>En Santiago, se llevó a cabo la reunión del Consejo de la Conmebol ¿El motivo? Solicitarle a la FIFA que mantenga el formato de "todos contra todos" en las próximas Eliminatorias para el Mundial de Norteamérica 2026.
-    A través de una misiva enviada al organismo rector, la Conmebol -encabezada por el paraguayo Alejandro Domínguez- manifestó la idea de continuar con la modalidad adaptada desde el proceso mundialista de 2002, lo que se traduce en partidos ida y vuelta según sorteo previo.
-    Esto se contrapone con la propuesta pensada en Zúrich, la que consistía en un modelo de dos grupos compuestos por cinco países con duelos ida y vuelta "cruzados". Aquí, los primeros y segundos lugares accedían a la cita continental, mientras que terceros y cuartos disputaban una especie de liguilla para determinar a los últimos clasificados y el cupo al repechaje intercontinental.
-    Cabe destacar que el Mundial de Qatar 2022 será el último proceso con 32 países, ya que desde la cita planetaria de Norteamérica 2026, serán 48 los equipos participantes.</p>
-    
-</body>
-<footer>
-    <p>Copyright Sebastian Caques 2022</p>
-</footer>
+        <!-- .hero -->
+		<section class="hero has-background-light">
+			<div class="hero-body">
+				<div class="container">
+					<figure class="image center">
+						<a href="./index.html">
+                            <img src="header_faro.png" alt="El Faro" style="max-width: 400px;" >
+                          </a>
+					</figure>
+                    <div id="rej"></div>
+                </div>
+			</div>
+		</section>
+		<!-- /.hero -->
+        
+        <!-- .hero-head -->
+            <div class="hero-head">
+	            <div class="columns is-mobile is-marginless heading has-text-weight-bold">
+		            <div class="column left">
+			        </div>
+		            
+                    <div class="column center">
+			            <p class="navbar-item"><a href="./inicio.html">Inicio</a></p>
+			            <p class="navbar-item"><a href="./deporte.html">Deporte</a></p>
+			            <p class="navbar-item"><a href="./negocios.html">Negocios</a></p>
+			            <p class="navbar-item"> <a href="./contacto.html">Contacto</a></p>
+			         </div>
+		            
+                     <div class="column right">
+			        </div>
+	            </div>
+            </div>
+        <!-- /.hero-head -->
 
+        
+        <!-- .section -->
+		<section class="section has-background-light">
+			<div class="container">
+				<div class="columns">
+				
+					
+                    <div class="column">
+						<article class="media notification">
+							<div class="media-content">
+								<div class="content">
+                                    <h2>Conmebol solicitará a la FIFA mantener formato "todos contra todos" en Mundial de Norteamérica 2026</h2>
+                                    <h3>Futbol</h3>
+                                    <p>En Santiago, se llevó a cabo la reunión del Consejo de la Conmebol ¿El motivo? Solicitarle a la FIFA que mantenga el formato de "todos contra todos" en las próximas Eliminatorias para el Mundial de Norteamérica 2026.
+                                    A través de una misiva enviada al organismo rector, la Conmebol -encabezada por el paraguayo Alejandro Domínguez- manifestó la idea de continuar con la modalidad adaptada desde el proceso mundialista de 2002, lo que se traduce en partidos ida y vuelta según sorteo previo.
+                                    Esto se contrapone con la propuesta pensada en Zúrich, la que consistía en un modelo de dos grupos compuestos por cinco países con duelos ida y vuelta "cruzados". Aquí, los primeros y segundos lugares accedían a la cita continental, mientras que terceros y cuartos disputaban una especie de liguilla para determinar a los últimos clasificados y el cupo al repechaje intercontinental.
+                                    Cabe destacar que el Mundial de Qatar 2022 será el último proceso con 32 países, ya que desde la cita planetaria de Norteamérica 2026, serán 48 los equipos participantes.</p>
+                                    
+								</div>
+							</div>
+						</article>
+					</div>
+					
+                    
+				</div>
+			</div>
+		</section>
+		<!-- /.section -->
+
+	
+        <footer>
+            <p>Copyright Sebastian Caques 2022</p>
+        </footer>
+	</body>
 </html>
+

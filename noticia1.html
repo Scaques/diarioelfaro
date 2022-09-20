@@ -1,39 +1,121 @@
 <!DOCTYPE html>
-<html lang="es">
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Noticia</title>
+		<link href="./style.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.0/css/bulma.min.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+        <script src="fechahora.js"></script>
+        <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+        
+		
+        <style>
+        .center {
+	        display: flex;
+	        justify-content: center;
+	        align-items: center;
+        }
+        </style>
+	</head>
+	
+    <body onload="reloj()">
 
-<head>
-    <title>Noticias</title>
-    <meta charset="UTF-8">
-    <script src="fechahora.js"></script>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
-    <link href="./style.css" rel="stylesheet" type="text/css">
-</head>
+        <!-- .section -->
+            <section class="section is-paddingless-horizontal">
+                <div class="container grid">
+                    <nav class="breadcrumb grid-xl" aria-label="breadcrumbs">
+                        <ul>
+                            <li><a href="#" aria-current="page">Se Arrienda Gato</a></li>
+                            <li><a href="#" aria-current="page">Se Hacen Sitios Web Baratos</a></li>
+                            <li><a href="#" aria-current="page">Se Compran Relojes</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </section>
+        <!-- /.section -->
 
-<body onload="reloj()">
-   
-    <header>
-        <a href="./index.html">
-            <img src="header_faro.png" alt="El Faro" style="width:30% ;" >
-          </a>
-    </header>
-        <div id="rej"></div>
-    <nav>
-        <a href="./inicio.html">Inicio</a>
-        <a href="./deporte.html">Deporte</a>
-        <a href="./negocios.html">Negocios</a>
-    </nav>
-    
-    <h2>Servel informa suspensión del plebiscito del 4-S en Haití por "seguridad de comunidad chilena residente"</h2>
-    <h3>Pais</h3>
-    <p>El Servicio Electoral (Servel) informó este lunes que el plebiscito constitucional del 4 de septiembre no se realizará en Puerto Príncipe, capital de Haití. Esto, por motivos de resguardo y seguridad de la comunidad chilena residente en ese país.
-    "Debido a la compleja e inestable situación que atraviesa Haití, y en resguardo de la integridad y seguridad de la comunidad chilena residente, no resulta factible realizar el plebiscito constitucional del domingo 4 de septiembre de 2022 en Puerto Príncipe", señaló el Servel en un comunicado.
-    "El electorado de la circunscripción electoral antes mencionada ha sido informado a través de correo electrónico, a fin de que no concurra al local de votación, ya que no habrá Plebiscito en Puerto Príncipe", añadió el Servicio.
-    De acuerdo al padrón electoral definitivo en el extranjero, hay 24 chilenos habilitados para votar en Haití de cara al plebiscito.</p>
-    
-</body>
+        <!-- .hero -->
+		<section class="hero has-background-light">
+			<div class="hero-body">
+				<div class="container">
+					<figure class="image center">
+						<a href="./index.html">
+                            <img src="header_faro.png" alt="El Faro" style="max-width: 400px;" >
+                          </a>
+					</figure>
+                    <div id="rej"></div>
+                </div>
+			</div>
+		</section>
+		<!-- /.hero -->
+        
+        <!-- .hero-head -->
+            <div class="hero-head">
+	            <div class="columns is-mobile is-marginless heading has-text-weight-bold">
+		            <div class="column left">
+			        </div>
+		            
+                    <div class="column center">
+			            <p class="navbar-item"><a href="./inicio.html">Inicio</a></p>
+			            <p class="navbar-item"><a href="./deporte.html">Deporte</a></p>
+			            <p class="navbar-item"><a href="./negocios.html">Negocios</a></p>
+			            <p class="navbar-item"> <a href="./contacto.html">Contacto</a></p>
+			         </div>
+		            
+                     <div class="column right">
+			        </div>
+	            </div>
+            </div>
+        <!-- /.hero-head -->
 
-<footer>
-    <p>Copyright Sebastian Caques 2022</p>
-</footer>
+        
+        <!-- .section -->
+		<section class="section has-background-light">
+			<div class="container">
+				<div class="columns">
+				
+					
+                    <div class="column">
+						<article class="media notification">
+							<div class="media-content">
+								<div class="content">
+                                    <h2>Servel informa suspensión del plebiscito del 4-S en Haití por "seguridad de comunidad chilena residente"</h2>
+                                    <h3>Pais</h3>
+                                    <p>El Servicio Electoral (Servel) informó este lunes que el plebiscito constitucional del 4 de septiembre no se realizará en Puerto Príncipe, capital de Haití. Esto, por motivos de resguardo y seguridad de la comunidad chilena residente en ese país.
+                                    "Debido a la compleja e inestable situación que atraviesa Haití, y en resguardo de la integridad y seguridad de la comunidad chilena residente, no resulta factible realizar el plebiscito constitucional del domingo 4 de septiembre de 2022 en Puerto Príncipe", señaló el Servel en un comunicado.
+                                    "El electorado de la circunscripción electoral antes mencionada ha sido informado a través de correo electrónico, a fin de que no concurra al local de votación, ya que no habrá Plebiscito en Puerto Príncipe", añadió el Servicio.
+                                    De acuerdo al padrón electoral definitivo en el extranjero, hay 24 chilenos habilitados para votar en Haití de cara al plebiscito.</p>
+                                    
+                                    
+								</div>
+							</div>
+						</article>
+					</div>
+					
+                    
+				</div>
+			</div>
+		</section>
+		<!-- /.section -->
 
+	
+        <footer>
+            <p>Copyright Sebastian Caques 2022</p>
+        </footer>
+	</body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+

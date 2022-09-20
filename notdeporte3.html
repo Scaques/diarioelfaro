@@ -1,40 +1,109 @@
 <!DOCTYPE html>
-<html lang="es">
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Deporte</title>
+		<link href="./style.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.0/css/bulma.min.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+        <script src="fechahora.js"></script>
+        <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+        
+		
+        <style>
+        .center {
+	        display: flex;
+	        justify-content: center;
+	        align-items: center;
+        }
+        </style>
+	</head>
+	
+    <body onload="reloj()">
 
-<head>
-    <title>Deportes</title>
-    <meta charset="UTF-8">
-    <script src="fechahora.js"></script>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
-    <link href="./style.css" rel="stylesheet" type="text/css">
-</head>
+        <!-- .section -->
+            <section class="section is-paddingless-horizontal">
+                <div class="container grid">
+                    <nav class="breadcrumb grid-xl" aria-label="breadcrumbs">
+                        <ul>
+                            <li><a href="#" aria-current="page">Se Arrienda Gato</a></li>
+                            <li><a href="#" aria-current="page">Se Hacen Sitios Web Baratos</a></li>
+                            <li><a href="#" aria-current="page">Se Compran Relojes</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </section>
+        <!-- /.section -->
 
-<body onload="reloj()">
-   
-    <header>
-        <a href="./index.html">
-            <img src="header_faro.png" alt="El Faro" style="width:30% ;" >
-          </a>
-    </header>
-        <div id="rej"></div>
-    <nav>
-        <a href="./inicio.html">Inicio</a>
-        <a href="./deporte.html">Deporte</a>
-        <a href="./negocios.html">Negocios</a>
-    </nav>
-    
-    <h2>"Real Betis tiene un entrenador top, con un equipo que juega bien": los elogios de José Mourinho a Manuel Pellegrini tras confirmarse que se enfrentarán en la Europa League</h2>
-    <h3>Futbol</h3>
-    <p>El entrenador de la Roma, José Mourinho, habló sobre el emparejamiento de su escuadra en el Grupo C, destacando al cuadro dirigido por el entrenador nacional, Manuel Pellegrini. "Obviamente, estamos hablando de un grupo que no es fácil. Betis ha ganado la Copa, tiene un entrenador top, con un equipo que juega bien, que viene de ser quinto en España y es de primer nivel", señaló el portugués.
-    "The Special One" aclaró que el último campeón de la Conference League -Roma- (tercera competición europea) no es el favorito para ganar la competición. "Es una competencia difícil y hay equipos que tienen que ganar la competición. Si no lo hacen, es un desastre para un equipo con potencial económico y deportivo increíble. Nosotros iremos paso a paso", sostuvo.
-    Según consignó Radio ADN, Mourinho, también habló de sus otros rivales: Ludogorets de Bulgaria y HJK Helsinki de Finlandia.
-    "Ludogorets tampoco es un equipo fácil. No sé Helsinki, pero ahí se nota la evolución de los equipos del norte de Europa", precisó.
-    Finalmente, expresó que "es increíble que vaya a jugar en Finlandia después de tanto tiempo, lamentablemente en cancha de plástico (sintética). Esperamos no jugar en noviembre".</p>
+        <!-- .hero -->
+		<section class="hero has-background-light">
+			<div class="hero-body">
+				<div class="container">
+					<figure class="image center">
+						<a href="./index.html">
+                            <img src="header_faro.png" alt="El Faro" style="max-width: 400px;" >
+                          </a>
+					</figure>
+                    <div id="rej"></div>
+                </div>
+			</div>
+		</section>
+		<!-- /.hero -->
+        
+        <!-- .hero-head -->
+            <div class="hero-head">
+	            <div class="columns is-mobile is-marginless heading has-text-weight-bold">
+		            <div class="column left">
+			        </div>
+		            
+                    <div class="column center">
+			            <p class="navbar-item"><a href="./inicio.html">Inicio</a></p>
+			            <p class="navbar-item"><a href="./deporte.html">Deporte</a></p>
+			            <p class="navbar-item"><a href="./negocios.html">Negocios</a></p>
+			            <p class="navbar-item"> <a href="./contacto.html">Contacto</a></p>
+			         </div>
+		            
+                     <div class="column right">
+			        </div>
+	            </div>
+            </div>
+        <!-- /.hero-head -->
 
-    
-</body>
-<footer>
-    <p>Copyright Sebastian Caques 2022</p>
-</footer>
+        
+        <!-- .section -->
+		<section class="section has-background-light">
+			<div class="container">
+				<div class="columns">
+				
+					
+                    <div class="column">
+						<article class="media notification">
+							<div class="media-content">
+								<div class="content">
+                                    <h2>"Real Betis tiene un entrenador top, con un equipo que juega bien": los elogios de José Mourinho a Manuel Pellegrini tras confirmarse que se enfrentarán en la Europa League</h2>
+                                    <h3>Futbol</h3>
+                                    <p>El entrenador de la Roma, José Mourinho, habló sobre el emparejamiento de su escuadra en el Grupo C, destacando al cuadro dirigido por el entrenador nacional, Manuel Pellegrini. "Obviamente, estamos hablando de un grupo que no es fácil. Betis ha ganado la Copa, tiene un entrenador top, con un equipo que juega bien, que viene de ser quinto en España y es de primer nivel", señaló el portugués.
+                                    "The Special One" aclaró que el último campeón de la Conference League -Roma- (tercera competición europea) no es el favorito para ganar la competición. "Es una competencia difícil y hay equipos que tienen que ganar la competición. Si no lo hacen, es un desastre para un equipo con potencial económico y deportivo increíble. Nosotros iremos paso a paso", sostuvo.
+                                    Según consignó Radio ADN, Mourinho, también habló de sus otros rivales: Ludogorets de Bulgaria y HJK Helsinki de Finlandia.
+                                    "Ludogorets tampoco es un equipo fácil. No sé Helsinki, pero ahí se nota la evolución de los equipos del norte de Europa", precisó.
+                                    Finalmente, expresó que "es increíble que vaya a jugar en Finlandia después de tanto tiempo, lamentablemente en cancha de plástico (sintética). Esperamos no jugar en noviembre".</p>
+                                    
+								</div>
+							</div>
+						</article>
+					</div>
+					
+                    
+				</div>
+			</div>
+		</section>
+		<!-- /.section -->
 
+	
+        <footer>
+            <p>Copyright Sebastian Caques 2022</p>
+        </footer>
+	</body>
 </html>
+

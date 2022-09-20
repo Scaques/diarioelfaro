@@ -1,43 +1,113 @@
 <!DOCTYPE html>
-<html lang="es">
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Negocios</title>
+		<link href="./style.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.0/css/bulma.min.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+        <script src="fechahora.js"></script>
+        <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+        
+		
+        <style>
+        .center {
+	        display: flex;
+	        justify-content: center;
+	        align-items: center;
+        }
+        </style>
+	</head>
+	
+    <body onload="reloj()">
 
-<head>
-    <title>Negocios</title>
-    <meta charset="UTF-8">
-    <script src="fechahora.js"></script>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
-    <link href="./style.css" rel="stylesheet" type="text/css">
-</head>
+        <!-- .section -->
+            <section class="section is-paddingless-horizontal">
+                <div class="container grid">
+                    <nav class="breadcrumb grid-xl" aria-label="breadcrumbs">
+                        <ul>
+                            <li><a href="#" aria-current="page">Se Arrienda Gato</a></li>
+                            <li><a href="#" aria-current="page">Se Hacen Sitios Web Baratos</a></li>
+                            <li><a href="#" aria-current="page">Se Compran Relojes</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </section>
+        <!-- /.section -->
 
-<body onload="reloj()">
-   
-    <header>
-        <a href="./index.html">
-            <img src="header_faro.png" alt="El Faro" style="width:30% ;" >
-          </a>
-    </header>
-        <div id="rej"></div>
-    <nav>
-        <a href="./inicio.html">Inicio</a>
-        <a href="./deporte.html">Deporte</a>
-        <a href="./negocios.html">Negocios</a>
-    </nav>
-    
-    <h2>FMI aprueba una línea de crédito de 18.500 millones de dólares para Chile</h2>
-    <h3>Negocios</h3>
-    <p>El Fondo Monetario Internacional (FMI) anunció este lunes la aprobación de una Línea de Crédito Flexible (LCF) de dos años para Chile por 18.500 millones de dólares, como medida preventiva para dotar al país de un seguro ante escenarios adversos, informó el ente financiero.
-    En mayo de este año, Chile decidió abandonar la LCF -un tipo de crédito de carácter preventivo diseñado para dar respuesta a situaciones económicas excepcionales- que había contraído con el FMI en 2020, cuando se declaró la pandemia de Covid-19.
-    Sin embargo, posteriormente el país volvió a solicitar acceso a esta línea de crédito, que el Directorio Ejecutivo del Fondo aprobó este lunes y que equivale al 800 % de la cuota de Chile al FMI.
-    Según explicó en una rueda de prensa virtual la jefa de la misión del Fondo para Chile, Ana Corbacho, la petición de regresar a la LCF llegó por parte del Banco Central de Chile y del Ministerio de Hacienda de ese país.
-    Corbacho resaltó que el Fondo percibe la economía chilena como resistente y "muy bien gestionada", pero que se enfrenta a un marcado aumento de los riesgos mundiales y de posibles impactos externos.
-    Chile cumple los requisitos para acceder a la LCF en virtud de la "gran solidez de sus fundamentos y políticas económicas", que continúan apuntalando la resiliencia y la capacidad del país para responder a choques.
-    La LCF puede utilizarse para atender cualquier tipo de necesidades de la balanza de pagos, por lo que las autoridades chilenas comunicaron al FMI su decisión de cancelar la actual Línea de Liquidez a Corto Plazo (LLCP) de 3.300 millones de dólares.
-    La LCF permite a los países beneficiarios utilizar la línea de crédito en cualquier momento y en cualquier cuantía, y está concebida para hacer frente de manera flexible a necesidades de balanza de pagos reales y potenciales.
-    Entre los posibles riesgos externos que enfrenta la economía chilena, el FMI destacó una desaceleración brusca de la economía mundial, choques de precios de las materias primas, las repercusiones de la guerra de Rusia en Ucrania, o un continuo endurecimiento de las condiciones financieras internacionales.</p>
-    
-</body>
-<footer>
-    <p>Copyright Sebastian Caques 2022</p>
-</footer>
+        <!-- .hero -->
+		<section class="hero has-background-light">
+			<div class="hero-body">
+				<div class="container">
+					<figure class="image center">
+						<a href="./index.html">
+                            <img src="header_faro.png" alt="El Faro" style="max-width: 400px;" >
+                          </a>
+					</figure>
+                    <div id="rej"></div>
+                </div>
+			</div>
+		</section>
+		<!-- /.hero -->
+        
+        <!-- .hero-head -->
+            <div class="hero-head">
+	            <div class="columns is-mobile is-marginless heading has-text-weight-bold">
+		            <div class="column left">
+			        </div>
+		            
+                    <div class="column center">
+			            <p class="navbar-item"><a href="./inicio.html">Inicio</a></p>
+			            <p class="navbar-item"><a href="./deporte.html">Deporte</a></p>
+			            <p class="navbar-item"><a href="./negocios.html">Negocios</a></p>
+			            <p class="navbar-item"> <a href="./contacto.html">Contacto</a></p>
+			         </div>
+		            
+                     <div class="column right">
+			        </div>
+	            </div>
+            </div>
+        <!-- /.hero-head -->
 
+        
+        <!-- .section -->
+		<section class="section has-background-light">
+			<div class="container">
+				<div class="columns">
+				
+					
+                    <div class="column">
+						<article class="media notification">
+							<div class="media-content">
+								<div class="content">
+                                    <h2>FMI aprueba una línea de crédito de 18.500 millones de dólares para Chile</h2>
+                                        <h3>Negocios</h3>
+                                            <p>El Fondo Monetario Internacional (FMI) anunció este lunes la aprobación de una Línea de Crédito Flexible (LCF) de dos años para Chile por 18.500 millones de dólares, como medida preventiva para dotar al país de un seguro ante escenarios adversos, informó el ente financiero.
+                                            En mayo de este año, Chile decidió abandonar la LCF -un tipo de crédito de carácter preventivo diseñado para dar respuesta a situaciones económicas excepcionales- que había contraído con el FMI en 2020, cuando se declaró la pandemia de Covid-19.
+                                            Sin embargo, posteriormente el país volvió a solicitar acceso a esta línea de crédito, que el Directorio Ejecutivo del Fondo aprobó este lunes y que equivale al 800 % de la cuota de Chile al FMI.
+                                            Según explicó en una rueda de prensa virtual la jefa de la misión del Fondo para Chile, Ana Corbacho, la petición de regresar a la LCF llegó por parte del Banco Central de Chile y del Ministerio de Hacienda de ese país.
+                                            Corbacho resaltó que el Fondo percibe la economía chilena como resistente y "muy bien gestionada", pero que se enfrenta a un marcado aumento de los riesgos mundiales y de posibles impactos externos.
+                                            Chile cumple los requisitos para acceder a la LCF en virtud de la "gran solidez de sus fundamentos y políticas económicas", que continúan apuntalando la resiliencia y la capacidad del país para responder a choques.
+                                            La LCF puede utilizarse para atender cualquier tipo de necesidades de la balanza de pagos, por lo que las autoridades chilenas comunicaron al FMI su decisión de cancelar la actual Línea de Liquidez a Corto Plazo (LLCP) de 3.300 millones de dólares.
+                                            La LCF permite a los países beneficiarios utilizar la línea de crédito en cualquier momento y en cualquier cuantía, y está concebida para hacer frente de manera flexible a necesidades de balanza de pagos reales y potenciales.
+                                            Entre los posibles riesgos externos que enfrenta la economía chilena, el FMI destacó una desaceleración brusca de la economía mundial, choques de precios de las materias primas, las repercusiones de la guerra de Rusia en Ucrania, o un continuo endurecimiento de las condiciones financieras internacionales.</p>
+
+								</div>
+							</div>
+						</article>
+					</div>
+					
+                    
+				</div>
+			</div>
+		</section>
+		<!-- /.section -->
+
+	
+        <footer>
+            <p>Copyright Sebastian Caques 2022</p>
+        </footer>
+	</body>
 </html>
+

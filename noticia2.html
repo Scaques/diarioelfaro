@@ -1,37 +1,107 @@
 <!DOCTYPE html>
-<html lang="es">
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Noticia</title>
+		<link href="./style.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.0/css/bulma.min.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+        <script src="fechahora.js"></script>
+        <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+        
+		
+        <style>
+        .center {
+	        display: flex;
+	        justify-content: center;
+	        align-items: center;
+        }
+        </style>
+	</head>
+	
+    <body onload="reloj()">
 
-<head>
-    <title>Noticias</title>
-    <meta charset="UTF-8">
-    <script src="fechahora.js"></script>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
-    <link href="./style.css" rel="stylesheet" type="text/css">
-</head>
+        <!-- .section -->
+            <section class="section is-paddingless-horizontal">
+                <div class="container grid">
+                    <nav class="breadcrumb grid-xl" aria-label="breadcrumbs">
+                        <ul>
+                            <li><a href="#" aria-current="page">Se Arrienda Gato</a></li>
+                            <li><a href="#" aria-current="page">Se Hacen Sitios Web Baratos</a></li>
+                            <li><a href="#" aria-current="page">Se Compran Relojes</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </section>
+        <!-- /.section -->
 
-<body onload="reloj()">
-   
-    <header>
-        <a href="./index.html">
-            <img src="header_faro.png" alt="El Faro" style="width:30% ;" >
-          </a>
-    </header>
-        <div id="rej"></div>
-    <nav>
-        <a href="./inicio.html">Inicio</a>
-        <a href="./deporte.html">Deporte</a>
-        <a href="./negocios.html">Negocios</a>
-    </nav>
-    
-    <h2>Autoridades decretan alerta amarilla en región de Ñuble por sismo en complejo volcánico Nevados de Chillán: se generó una columna eruptiva de 2km</h2>
-    <h3>Pais</h3>
-    <p>Durante esta jornada se reportó un sismo en el complejo volcánico Nevados de Chillán, región de Ñuble, provocando una columna eruptiva que tuvo un alcance de dos kilómetros de altura desde el cráter, sumado a flujos piroclásticos de corto alcance.
-    En específico, las estaciones de monitoreo del Servicio Nacional de Geología y Minería (Sernageomin) registraron el movimiento telúrico alrededor de las 10:33 horas, el cual está asociado a la dinámica e fluidos al interior del sistema volcánico, según consignó La Tercera. 
-    Según el propio organismo, la actividad que registró una onda acústica de 166 pascales se encuentra relacionada con el proceso de aumento en un domo.</p>
-    
-</body>
-<footer>
-    <p>Copyright Sebastian Caques 2022</p>
-</footer>
+        <!-- .hero -->
+		<section class="hero has-background-light">
+			<div class="hero-body">
+				<div class="container">
+					<figure class="image center">
+						<a href="./index.html">
+                            <img src="header_faro.png" alt="El Faro" style="max-width: 400px;" >
+                          </a>
+					</figure>
+                    <div id="rej"></div>
+                </div>
+			</div>
+		</section>
+		<!-- /.hero -->
+        
+        <!-- .hero-head -->
+            <div class="hero-head">
+	            <div class="columns is-mobile is-marginless heading has-text-weight-bold">
+		            <div class="column left">
+			        </div>
+		            
+                    <div class="column center">
+			            <p class="navbar-item"><a href="./inicio.html">Inicio</a></p>
+			            <p class="navbar-item"><a href="./deporte.html">Deporte</a></p>
+			            <p class="navbar-item"><a href="./negocios.html">Negocios</a></p>
+			            <p class="navbar-item"> <a href="./contacto.html">Contacto</a></p>
+			         </div>
+		            
+                     <div class="column right">
+			        </div>
+	            </div>
+            </div>
+        <!-- /.hero-head -->
 
+        
+        <!-- .section -->
+		<section class="section has-background-light">
+			<div class="container">
+				<div class="columns">
+				
+					
+                    <div class="column">
+						<article class="media notification">
+							<div class="media-content">
+								<div class="content">
+                                    <h2>Autoridades decretan alerta amarilla en región de Ñuble por sismo en complejo volcánico Nevados de Chillán: se generó una columna eruptiva de 2km</h2>
+                                    <h3>Pais</h3>
+                                    <p>Durante esta jornada se reportó un sismo en el complejo volcánico Nevados de Chillán, región de Ñuble, provocando una columna eruptiva que tuvo un alcance de dos kilómetros de altura desde el cráter, sumado a flujos piroclásticos de corto alcance.
+                                    En específico, las estaciones de monitoreo del Servicio Nacional de Geología y Minería (Sernageomin) registraron el movimiento telúrico alrededor de las 10:33 horas, el cual está asociado a la dinámica e fluidos al interior del sistema volcánico, según consignó La Tercera. 
+                                    Según el propio organismo, la actividad que registró una onda acústica de 166 pascales se encuentra relacionada con el proceso de aumento en un domo.</p>
+                                </div>
+							</div>
+						</article>
+					</div>
+					
+                    
+				</div>
+			</div>
+		</section>
+		<!-- /.section -->
+
+	
+        <footer>
+            <p>Copyright Sebastian Caques 2022</p>
+        </footer>
+	</body>
 </html>
+
+

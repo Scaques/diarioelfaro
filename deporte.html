@@ -1,54 +1,141 @@
 <!DOCTYPE html>
-<html lang="es">
-
-<head>
-    <title>Deportes</title>
-    <meta charset="UTF-8">
-    <script src="fechahora.js"></script>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
-    <link href="./style.css" rel="stylesheet" type="text/css">
-</head>
-
-<body onload="reloj()">
-   
-    <header>
-        <a href="./index.html">
-            <img src="header_faro.png" alt="El Faro" style="width:30% ;" >
-          </a>
-    </header>
-        <div id="rej"></div>
-    <nav>
-        <a href="./inicio.html">Inicio</a>
-        <a href="./deporte.html">Deporte</a>
-        <a href="./negocios.html">Negocios</a>
-    </nav>
-    
-    <div class="grid">
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Deportes</title>
+		<link href="./style.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.0/css/bulma.min.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+        <script src="fechahora.js"></script>
+        <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
         
-        <div>
-            <a href="./notdeporte1.html">
-                <h2>Conmebol solicitará a la FIFA mantener formato "todos contra todos" en Mundial de Norteamérica 2026</h2>
-            </a>
-        </div>
+		
+        <style>
+        .center {
+	        display: flex;
+	        justify-content: center;
+	        align-items: center;
+        }
+        </style>
+	</head>
+	
+    <body onload="reloj()">
+
+        <!-- .section -->
+            <section class="section is-paddingless-horizontal">
+                <div class="container grid">
+                    <nav class="breadcrumb grid-xl" aria-label="breadcrumbs">
+                        <ul>
+                            <li><a href="#" aria-current="page">Se Arrienda Gato</a></li>
+                            <li><a href="#" aria-current="page">Se Hacen Sitios Web Baratos</a></li>
+                            <li><a href="#" aria-current="page">Se Compran Relojes</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </section>
+        <!-- /.section -->
+
+        <!-- .hero -->
+		<section class="hero has-background-light">
+			<div class="hero-body">
+				<div class="container">
+					<figure class="image center">
+						<a href="./index.html">
+                            <img src="header_faro.png" alt="El Faro" style="max-width: 400px;" >
+                          </a>
+					</figure>
+                    <div id="rej"></div>
+                </div>
+			</div>
+		</section>
+		<!-- /.hero -->
         
-        <div>
-            <a href="./notdeporte2.html">
-                <h2>Kyrgios sobre en Garín en la previa de los cuartos de final de Wimbledon: “Es un guerrero, eso es seguro”</h2>
-            </a>
-        </div>
+        <!-- .hero-head -->
+            <div class="hero-head">
+	            <div class="columns is-mobile is-marginless heading has-text-weight-bold">
+		            <div class="column left">
+			        </div>
+		            
+                    <div class="column center">
+			            <p class="navbar-item"><a href="./inicio.html">Inicio</a></p>
+			            <p class="navbar-item"><a href="./deporte.html">Deporte</a></p>
+			            <p class="navbar-item"><a href="./negocios.html">Negocios</a></p>
+			            <p class="navbar-item"> <a href="./contacto.html">Contacto</a></p>
+			         </div>
+		            
+                     <div class="column right">
+			        </div>
+	            </div>
+            </div>
+        <!-- /.hero-head -->
+
         
-        <div>
-            <a href="./notdeporte3.html">
-                <h2>"Real Betis tiene un entrenador top, con un equipo que juega bien": los elogios de José Mourinho a Manuel Pellegrini tras confirmarse que se enfrentarán en la Europa League</h2>
-            </a>
-        </div>
+        <!-- .section -->
+		<section class="section has-background-light">
+			<div class="container">
+				<div class="columns">
+					
+                    <div class="column">
+						<article class="media notification has-background-white">
+							<div class="media-content">
+								<div class="content">
+									<h1 class="title is-size-4">Conmebol solicitará a la FIFA mantener formato "todos contra todos" en Mundial de Norteamérica 2026</h1>
+									<p class="is-size-5">
+										En Santiago, se llevó a cabo la reunión del Consejo de la Conmebol ¿El motivo? Solicitarle a la FIFA que mantenga el formato de "todos contra todos" en las próximas Eliminatorias para el Mundial de Norteamérica 2026... 
+                                        <div>
+                                            <a href="./notdeporte1.html">
+                                            Leer Mas
+                                            </a>
+                                        </div>
+                                    </p>
+								</div>
+							</div>
+						</article>
+					</div>
+					
+                    <div class="column">
+						<article class="media notification has-background-white">
+							<div class="media-content">
+								<div class="content">
+									<h1 class="title is-size-4">Kyrgios sobre en Garín en la previa de los cuartos de final de Wimbledon: “Es un guerrero, eso es seguro”</h1>
+									<p class="is-size-5">
+										El chileno Cristian Garín remontó un partidazo ante el australiano Alex De Miñaur, ganando en cinco sets, luego de perder los dos primeros. El nacional se medirá con uno de los jugadores más talentosos y controversiales del circuito, Nick Kirgyos. En la previa del duelo entre ambos por cuartos de final, el también australiano tuvo palabras para el número 1 de Chile...
+                                        <div>
+                                            <a href="./notdeporte2.html">
+                                            Leer Mas
+                                            </a>
+                                        </div>
+                                    </p>
+								</div>
+							</div>
+						</article>
+					</div>
+					
+                    <div class="column">
+						<article class="media notification has-background-white">
+							<div class="media-content">
+								<div class="content">
+									<h1 class="title is-size-4">"Real Betis tiene un entrenador top, con un equipo que juega bien": los elogios de José Mourinho a Manuel Pellegrini tras confirmarse que se enfrentarán en la Europa League</h1>
+									<p class="is-size-5">
+										El entrenador de la Roma, José Mourinho, habló sobre el emparejamiento de su escuadra en el Grupo C, destacando al cuadro dirigido por el entrenador nacional, Manuel Pellegrini. "Obviamente, estamos hablando de un grupo que no es fácil. Betis ha ganado la Copa, tiene un entrenador top, con un equipo que juega bien, que viene de ser quinto en España y es de primer nivel", señaló el portugués...
+                                        <div>
+                                            <a href="./notdeporte3.html">
+                                            Leer Mas
+                                            </a>
+                                        </div>
+                                    </p>
+								</div>
+							</div>
+						</article>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- /.section -->
 
-    </div>
-
-</body>
-
-<footer>
-    <p>Copyright Sebastian Caques 2022</p>
-</footer>
-
+        <footer>
+            <p>Copyright Sebastian Caques 2022</p>
+        </footer>
+	</body>
 </html>
