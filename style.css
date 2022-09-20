@@ -7,15 +7,13 @@ footer{
     text-align: center;
     background-color: #c9d2d0;
     color: #31231e ;
-    height: 50px;
+    height: 100px;
     position: absolute;
-    top: 150%;
     width: 100%;
 }
-nav{
-    text-align: center;
-    padding: 20px;
-    font-size: 200%;
+.navbar-item{
+    font-size: 150%;
+    font-family: "Trirong", serif;
 }
 img {
     display: block;
@@ -30,27 +28,13 @@ a:active {
     text-decoration: none;
     font-weight: bold;
 }
-.grid {
-    
-    display:grid;
-    grid-template-columns: repeat(auto-fit, minmax (100px, 1fr)) ;
-    grid-template-rows: repeat(auto-fit, minmax (100px, 1fr)) ;
-    grid-gap: 10%;
-    justify-content: center;
-}
-.grid div{
-    background: #ffffff;
-}
-.grid div:hover{
-    background: #000000;
-    color: #ffffff;
-}
+
 #rej{
-    padding-top: 1%;
+    padding-top: 2%;
     font-family: "Trirong", serif;
     text-align: center;
+    
 }
-
 form{
     
     display: flex;
@@ -60,8 +44,41 @@ form{
     width: 90%;
     
 }
-
 form h2{
     text-align: center;
     font-family: "Trirong", serif;
 }
+.center, .center-column, .top, .right, .bottom, .left {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.center-column {
+    flex-direction: column;
+}
+.top    { align-items:     flex-start; }
+.right  { justify-content: flex-end;   }
+.bottom { align-items:     flex-end;   }
+.left   { justify-content: flex-start; }
+
+.single-spaced, .single-spaced * {
+    line-height: 1;
+}
+
+@media (max-width: 1024px) {
+	.desktop {
+		display: none;
+	}
+}
+
+.is-paddingless-horizontal { padding-left: 0; padding-right: 0; }
+
+.grid {
+	font-family: "Trirong", serif;
+    display: grid;
+    grid-template-columns:
+		1fr 1.5remminmax(0, 500px) 1.5rem 1fr ;
+}
+
+.grid *  { grid-column: md; }
+.grid-xl { grid-column: xl; }

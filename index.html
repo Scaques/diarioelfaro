@@ -1,70 +1,237 @@
 <!DOCTYPE html>
-<html lang="es">
-
-<head>
-    <title>Diario El Faro</title>
-    <meta charset="UTF-8">
-    <script src="fechahora.js"></script>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
-    <link href="./style.css" rel="stylesheet" type="text/css">
-</head>
-
-<body onload="reloj()">
-   
-    <header>
-        <a href="./index.html">
-            <img src="header_faro.png" alt="El Faro" style="width:30% ;" >
-          </a>
-    </header>
-        <div id="rej"></div>
-    <nav>
-        <a href="./inicio.html">Inicio</a>
-        <a href="./deporte.html">Deporte</a>
-        <a href="./negocios.html">Negocios</a>
-        <a href="./contacto.html">Contacto</a>
-    </nav>
-    
-    <form onsubmit="article();reset(); return false;">
-        <textarea id="noticia" rows="1" placeholder="Noticia"></textarea>
-        <button type="submit">Enviar Noticia</button>
-    </form>
-   
-   
-    <div class="grid" id="grid">
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Diario El Faro</title>
+		<link href="./style.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.0/css/bulma.min.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+        <script src="fechahora.js"></script>
+        <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
         
-        <div>
-            <a href="./noticia1.html">
-            <h2>Servel informa suspensión del plebiscito del 4-S en Haití por "seguridad de comunidad chilena residente"</h2>
-            </a>
-        </div>
+		
+        <style>
+        .center {
+	        display: flex;
+	        justify-content: center;
+	        align-items: center;
+        }
+        </style>
+	</head>
+	
+    <body onload="reloj()">
+
+        <!-- .section -->
+            <section class="section is-paddingless-horizontal">
+                <div class="container grid">
+                    <nav class="breadcrumb grid-xl" aria-label="breadcrumbs">
+                        <ul>
+                            <li><a href="#" aria-current="page">Se Arrienda Gato</a></li>
+                            <li><a href="#" aria-current="page">Se Hacen Sitios Web Baratos</a></li>
+                            <li><a href="#" aria-current="page">Se Compran Relojes</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </section>
+        <!-- /.section -->
+
+        <!-- .hero -->
+		<section class="hero has-background-light">
+			<div class="hero-body">
+				<div class="container">
+					<figure class="image center">
+						<a href="./index.html">
+                            <img src="header_faro.png" alt="El Faro" style="max-width: 400px;" >
+                          </a>
+					</figure>
+                    <div id="rej"></div>
+                </div>
+			</div>
+		</section>
+		<!-- /.hero -->
         
-        <div>
-            <a href="./notdeporte1.html">
-            <h2>Conmebol solicitará a la FIFA mantener formato "todos contra todos" en Mundial de Norteamérica 2026</h2>
-            </a>
-        </div>
+        <!-- .hero-head -->
+            <div class="hero-head">
+	            <div class="columns is-mobile is-marginless heading has-text-weight-bold">
+		            <div class="column left">
+			        </div>
+		            
+                    <div class="column center">
+			            <p class="navbar-item"><a href="./inicio.html">Inicio</a></p>
+			            <p class="navbar-item"><a href="./deporte.html">Deporte</a></p>
+			            <p class="navbar-item"><a href="./negocios.html">Negocios</a></p>
+			            <p class="navbar-item"> <a href="./contacto.html">Contacto</a></p>
+			         </div>
+		            
+                     <div class="column right">
+			        </div>
+	            </div>
+            </div>
+        <!-- /.hero-head -->
+
         
-        <div>
-            <a href="./notnegocios1.html">
-            <h2>FMI aprueba una línea de crédito de 18.500 millones de dólares para Chile</h2>
-            </a>
-        </div>
+        <!-- .section -->
+		<section class="section has-background-light">
+			<div class="container">
+				<div class="columns">
+					
+                    <div class="column">
+						<article class="media notification has-background-white">
+							<div class="media-content">
+								<div class="content">
+									<h1 class="title is-size-4">Servel informa suspensión del plebiscito del 4-S en Haití por "seguridad de comunidad chilena residente"</h1>
+									<p class="is-size-5">
+										El Servicio Electoral (Servel) informó este lunes que el plebiscito constitucional del 4 de septiembre no se realizará en Puerto Príncipe, capital de Haití. Esto, por motivos de resguardo y seguridad de la comunidad chilena residente en ese...
+                                        <div>
+                                            <a href="./noticia1.html">
+                                            Leer Mas
+                                            </a>
+                                        </div>
+									</p>
+								</div>
+							</div>
+						</article>
+					</div>
+					
+                    <div class="column">
+						<article class="media notification has-background-white">
+							<div class="media-content">
+								<div class="content">
+									<h1 class="title is-size-4">Conmebol solicitará a la FIFA mantener formato "todos contra todos" en Mundial de Norteamérica 2026</h1>
+									<p class="is-size-5">
+										En Santiago, se llevó a cabo la reunión del Consejo de la Conmebol ¿El motivo? Solicitarle a la FIFA que mantenga el formato de "todos contra todos" en las próximas Eliminatorias para el Mundial de Norteamérica 2026... 
+                                        <div>
+                                            <a href="./notdeporte1.html">
+                                            Leer Mas
+                                            </a>
+                                        </div>
+                                    </p>
+								</div>
+							</div>
+						</article>
+					</div>
+					
+                    <div class="column">
+						<article class="media notification has-background-white">
+							<div class="media-content">
+								<div class="content">
+									<h1 class="title is-size-4">FMI aprueba una línea de crédito de 18.500 millones de dólares para Chile</h1>
+									<p class="is-size-5">
+										El Fondo Monetario Internacional (FMI) anunció este lunes la aprobación de una Línea de Crédito Flexible (LCF) de dos años para Chile por 18.500 millones de dólares, como medida preventiva para dotar al país de un seguro ante escenarios adversos, informó el ente... 
+                                        <div>
+                                            <a href="./notnegocios1.html">
+                                            Leer Mas
+                                            </a>
+                                        </div>
+                                    </p>
+								</div>
+							</div>
+						</article>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- /.section -->
 
-        <div>
-            <a href="./noticiavideo.html">
-            <h2>Video: Caos en Bagdad tras la dimisión de Al Sadr al no poder formar gobierno</h2>
-            </a>
-        </div>
-    
-    
-    </div>
-
-
-
-</body>
-
-<footer>
-    <p>Copyright Sebastian Caques 2022</p>
-</footer>
-
+		<!-- .section -->
+		<section class="section has-background-light">
+			<div class="container">
+				<div class="columns is-multiline">
+					<div class="column is-one-third">
+						<article class="media notification has-background-white">
+						    <div class="media-content">
+								<div class="content">
+									<h1 class="title is-size-5">Autoridades decretan alerta amarilla en región de Ñuble por sismo en complejo volcánico Nevados de Chillán: se generó una columna eruptiva de 2km</h1>
+									<p class="subtitle is-size-6">
+                                        <a href="./noticia2.html">
+                                            Leer Mas
+                                        </a>
+									</p>
+								</div>
+							</div>
+						</article>
+					</div>
+					
+                    <div class="column is-one-third">
+						<article class="media notification has-background-white">
+							<div class="media-content">
+								<div class="content">
+									<h1 class="title is-size-5">Kyrgios sobre en Garín en la previa de los cuartos de final de Wimbledon: “Es un guerrero, eso es seguro”</h1>
+									<p class="subtitle is-size-6">
+										<a href="./notdeporte2.html">
+                                            Leer Mas
+                                        </a>
+								</div>
+							</div>
+						</article>
+					</div>
+					
+                    <div class="column is-one-third">
+						<article class="media notification has-background-white">
+							<div class="media-content">
+								<div class="content">
+									<h1 class="title is-size-5">Rusia: su economía se contraerá menos del 3% en 2022 según gobierno</h1>
+									<p class="subtitle is-size-6">
+										<a href="./notnegocios2.html">
+                                            Leer Mas
+                                        </a>
+									</p>
+								</div>
+							</div>
+						</article>
+					</div>
+					
+                    <div class="column is-one-third">
+						<article class="media notification has-background-white">
+                            <div class="media-content">
+								<div class="content">
+									<h1 class="title is-size-5">Colombia: atacan a tiros caravana del presidente Gustavo Petro</h1>
+									<p class="subtitle is-size-6">
+                                        <a href="./noticia3.html">
+                                            Leer Mas
+                                        </a>
+									</p>
+								</div>
+							</div>
+						</article>
+					</div>
+					
+                    <div class="column is-one-third">
+						<article class="media notification has-background-white">
+							<div class="media-content">
+								<div class="content">
+									<h1 class="title is-size-5">Video: Caos en Bagdad tras la dimisión de Al Sadr al no poder formar gobierno</h1>
+									<p class="subtitle is-size-6">
+                                        <a href="./noticiavideo.html">
+                                            Leer Mas
+                                        </a>
+									</p>
+								</div>
+							</div>
+						</article>
+					</div>
+					
+                    <div class="column is-one-third">
+						<article class="media notification has-background-white">
+							<div class="media-content">
+								<div class="content">
+									<h1 class="title is-size-5">Audio: Carreta con caballos atropelló a ciclistas en Alameda, conductor fue detenido</h1>
+									<p class="subtitle is-size-6">
+										<a href="./noticiaaudio.html">
+                                            Leer Mas
+                                        </a>
+									</p>
+								</div>
+							</div>
+						</article>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- /.section -->
+        <footer>
+            <p>Copyright Sebastian Caques 2022</p>
+        </footer>
+	</body>
 </html>
