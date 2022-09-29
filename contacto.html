@@ -81,34 +81,16 @@
 					</div>
 					
                     <div class="column">
-						<article class="media notification has-background-white">
+						<article class="media notification ">
 							<div class="media-content">
 								<div class="content">
 									<div class="container">
-                                        <form onsubmit="sendEmail(); reset(); return false;">
-                                            <h2>Contactese con Nosotros</h2>
-                                            <input type="text" id="name" placeholder="Nombre" required>
-                                            <textarea id="message" rows="4" placeholder="Mensaje"></textarea>
+                                        <form action="contact.php" method="post">
+                                            <h2>Comuniquese con Nosotros</h2>
+                                            <input type="text" id="nomcon" name="nomcon" placeholder="Nombre" required>
+                                            <input type="text" id="mailcon" name="mailcon" placeholder="E-Mail" required>
+                                            <textarea id="mensaje" name="mensaje"rows="4" placeholder="Mensaje"></textarea>
                                             <button type="submit">Enviar</button>
-                                        </form>
-                                    </div>
-                                    <script src="https://smtpjs.com/v3/smtp.js"></script>
-                                    <script>
-                                        function sendEmail(){
-                                            Email.send({
-                                                Host : "smtp.gmail.com",
-                                                Username : 
-                                                Password : 
-                                                To : 
-                                                From : document.getElementById("name").value,
-                                                Subject : "Contacto",
-                                                Body : document.getElementById("message").value
-                                            }).then(
-                                                message => alert("Mensaje Enviado")
-                                            )
-                                        }
-                                
-                                    </script>
                                         </div>
                                     </p>
 								</div>
