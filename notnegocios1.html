@@ -35,40 +35,27 @@
                 </div>
             </section>
         <!-- /.section -->
-
-        <!-- .hero -->
-		<section class="hero has-background-light">
-			<div class="hero-body">
-				<div class="container">
-					<figure class="image center">
-						<a href="./index.html">
-                            <img src="header_faro.png" alt="El Faro" style="max-width: 400px;" >
-                          </a>
-					</figure>
-                    <div id="rej"></div>
-                </div>
-			</div>
-		</section>
-		<!-- /.hero -->
+   <!-- .hero-head -->
+   <div class="hero-head">
+    <div class="columns is-mobile is-marginless heading has-text-weight-bold">
+        <div class="column left">
+            <img src="header_faro.png" alt="El Faro" style="max-width: 200px;" >
+        </div>
         
-        <!-- .hero-head -->
-            <div class="hero-head">
-	            <div class="columns is-mobile is-marginless heading has-text-weight-bold">
-		            <div class="column left">
-			        </div>
-		            
-                    <div class="column center">
-			            <p class="navbar-item"><a href="./inicio.html">Inicio</a></p>
-			            <p class="navbar-item"><a href="./deporte.html">Deporte</a></p>
-			            <p class="navbar-item"><a href="./negocios.html">Negocios</a></p>
-			            <p class="navbar-item"> <a href="./contacto.html">Contacto</a></p>
-			         </div>
-		            
-                     <div class="column right">
-			        </div>
-	            </div>
-            </div>
-        <!-- /.hero-head -->
+        <div class="column center">
+            
+            <p class="navbar-item"><a href="./inicio.html">Inicio</a></p>
+            <p class="navbar-item"><a href="./deporte.html">Deporte</a></p>
+            <p class="navbar-item"><a href="./negocios.html">Negocios</a></p>
+            <p class="navbar-item"> <a href="./registro.php">Contacto</a></p>
+        </div>
+        
+         <div class="column right">
+        </div>
+    </div>
+</div>
+<!-- /.hero-head -->
+<div id="rej"></div>
 
         
         <!-- .section -->
@@ -82,7 +69,9 @@
 							<div class="media-content">
 								<div class="content">
                                     <h2>FMI aprueba una línea de crédito de 18.500 millones de dólares para Chile</h2>
-                                        <h3>Negocios</h3>
+                                    <img src="Business-Intelligence-800x493.jpg" style="max-width: 40%" >
+                                    
+                                            <h3>Negocios</h3>
                                             <p>El Fondo Monetario Internacional (FMI) anunció este lunes la aprobación de una Línea de Crédito Flexible (LCF) de dos años para Chile por 18.500 millones de dólares, como medida preventiva para dotar al país de un seguro ante escenarios adversos, informó el ente financiero.
                                             En mayo de este año, Chile decidió abandonar la LCF -un tipo de crédito de carácter preventivo diseñado para dar respuesta a situaciones económicas excepcionales- que había contraído con el FMI en 2020, cuando se declaró la pandemia de Covid-19.
                                             Sin embargo, posteriormente el país volvió a solicitar acceso a esta línea de crédito, que el Directorio Ejecutivo del Fondo aprobó este lunes y que equivale al 800 % de la cuota de Chile al FMI.
@@ -103,7 +92,25 @@
 			</div>
 		</section>
 		<!-- /.section -->
-
+        <div id="disqus_thread"></div>
+        <script>
+            /**
+            *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+            *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+            /*
+            var disqus_config = function () {
+            this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+            this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+            };
+            */
+            (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document, s = d.createElement('script');
+            s.src = 'https://diarioelfaro.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+            })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 	
         <footer>
             <p>Copyright Sebastian Caques 2022</p>
